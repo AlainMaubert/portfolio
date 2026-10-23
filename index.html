@@ -18,10 +18,13 @@
     font-size:0.9rem; color:var(--muted); }
   header .contact a { color:var(--muted); text-decoration:none; border-bottom:1px solid var(--rule); }
   header .contact a:hover { color:var(--accent); border-color:var(--accent); }
+  .pagenav { font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:0.85rem; margin-top:0.8rem; }
+  .pagenav a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent); }
   .lede { font-size:1.1rem; color:#2b2b2b; margin-bottom:2.8rem; }
   .label { font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
     font-size:0.7rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted); margin:0 0 0.9rem; }
-  article { padding:2.1rem 0; border-top:1px solid var(--rule); }
+  article { padding:2.1rem 0; border-top:1px solid var(--rule); scroll-margin-top:1.5rem; }
   article:first-of-type { border-top:2px solid var(--ink); }
   article h2 { font-size:1.42rem; line-height:1.25; margin:0 0 0.25rem; }
   article .kicker { font-style:italic; color:var(--muted); margin:0 0 1.1rem; font-size:0.98rem; }
@@ -31,7 +34,7 @@
     font-size:0.68rem; letter-spacing:0.13em; text-transform:uppercase; color:var(--muted); padding-top:0.3rem; }
   dl.meta dd { margin:0; }
   .doclink { font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; font-size:0.86rem;
-    display:inline-block; margin-top:0.4rem; color:var(--accent); text-decoration:none;
+    display:inline-block; margin-top:0.4rem; margin-right:1rem; color:var(--accent); text-decoration:none;
     border-bottom:1px solid var(--accent); padding-bottom:1px; }
   .doclink:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
   footer { margin-top:3.2rem; padding-top:1.4rem; border-top:1px solid var(--rule);
@@ -54,6 +57,7 @@
       <a href="mailto:mauberta@uregina.ca">mauberta@uregina.ca</a> &nbsp;&middot;&nbsp;
       PhD Candidate, Computer Science &nbsp;&middot;&nbsp; University of Regina
     </p>
+    <p class="pagenav"><a href="teaching/">Teaching evidence and course design &rarr;</a></p>
   </header>
 
   <p class="lede">
@@ -67,7 +71,7 @@
 
   <p class="label">Selected Work</p>
 
-  <article>
+  <article id="design">
     <h2>Left-Handed Inclusion in Computer Games</h2>
     <p class="kicker">Doctoral research &middot; design thinking from empathise to test</p>
     <dl class="meta">
@@ -84,7 +88,20 @@
     </dl>
   </article>
 
-  <article>
+  <article id="coding">
+    <h2>Creative Coding</h2>
+    <p class="kicker">Unity and Arduino &middot; computational media as artistic material</p>
+    <dl class="meta">
+      <dt>Problem</dt>
+      <dd>Students meeting code for the first time need an entry point where something moves, responds, or sounds within the first session, and a path from that first success toward work they can articulate.</dd>
+      <dt>Practice</dt>
+      <dd>Unity with C# for interactive scenes, physics, and real time behavior; Arduino with C++ for physical computing, sensors, and actuators. In CTCH 223 / CS 207 students program microcontrollers to control DC motors, an RGB LED strip, sensor systems, and interactive sound. In CTCH/DES 312 students build interactive experiences in Unity from concept through implementation.</dd>
+      <dt>Approach</dt>
+      <dd>Short demonstrations followed by studio time, paired programming, and small weekly experiments rather than a single large assignment, so that failure stays cheap and frequent. Readings and survey lectures place the work in the history and theory of computational art.</dd>
+    </dl>
+  </article>
+
+  <article id="vr">
     <h2>Immersive Interaction Design</h2>
     <p class="kicker">VR prototypes and spatial interaction</p>
     <dl class="meta">
@@ -96,7 +113,7 @@
     <a class="doclink" href="VR.pdf">View documentation (PDF)</a>
   </article>
 
-  <article>
+  <article id="physical">
     <h2>Physical and Embedded Interaction</h2>
     <p class="kicker">Arduino based interfaces &middot; CTCH 223 / CS 207</p>
     <dl class="meta">
@@ -107,10 +124,10 @@
       <dt>Demonstration</dt>
       <dd>The playlist records laboratory demonstrations, including a DC motor whose speed is controlled by a potentiometer, showing the working devices rather than describing them.</dd>
     </dl>
-    <a class="doclink" href="https://www.youtube.com/playlist?list=PL4VNqVoYtqlrzv30kk5dMOuE7PErVZM46" target="_blank" rel="noopener">View the project playlist (YouTube)</a>
+    <a class="doclink" href="https://www.youtube.com/playlist?list=PL4VNqVoYtqlrzv30kk5dMOuE7PErVZM46" target="_blank" rel="noopener">Project playlist (YouTube)</a>
   </article>
 
-  <article>
+  <article id="games">
     <h2>Student Game Design Projects</h2>
     <p class="kicker">CTCH / DES 312 &middot; Winter 2024 to Spring/Summer 2025</p>
     <dl class="meta">
@@ -124,17 +141,13 @@
       <dd>Student games including <em>Mystic Realms</em>, <em>Kimetsu</em>, <em>Dawndale Grove</em>, and <em>Chicken Coop</em>, spanning narrative design, level design, and interactive mechanics.</dd>
     </dl>
     <a class="doclink" href="VGD.pdf">View documentation (PDF)</a>
-    <br>
-    <a class="doclink" href="https://youtube.com/playlist?list=PL4VNqVoYtqlpOFJuFWoiGyRkeEyR-nMz4" target="_blank" rel="noopener">CTCH 312 Winter 2024 playlist</a>
-    <br>
-    <a class="doclink" href="https://youtube.com/playlist?list=PL4VNqVoYtqloQjQP65kXPOhii-K-kcOL5" target="_blank" rel="noopener">CTCH 312 Spring/Summer 2024 playlist</a>
-    <br>
-    <a class="doclink" href="https://youtube.com/playlist?list=PL4VNqVoYtqlpQMlNhyr_ZLX18K_VTNmSu" target="_blank" rel="noopener">CTCH 312 Winter 2025 playlist</a>
-    <br>
-    <a class="doclink" href="https://youtube.com/playlist?list=PL4VNqVoYtqlowo6pTIb1bccQasBKJuNzz" target="_blank" rel="noopener">CTCH/DES 312 Spring/Summer 2025 playlist</a>
+    <a class="doclink" href="https://youtube.com/playlist?list=PL4VNqVoYtqlpOFJuFWoiGyRkeEyR-nMz4" target="_blank" rel="noopener">W 2024 playlist</a>
+    <a class="doclink" href="https://youtube.com/playlist?list=PL4VNqVoYtqloQjQP65kXPOhii-K-kcOL5" target="_blank" rel="noopener">SS 2024 playlist</a>
+    <a class="doclink" href="https://youtube.com/playlist?list=PL4VNqVoYtqlpQMlNhyr_ZLX18K_VTNmSu" target="_blank" rel="noopener">W 2025 playlist</a>
+    <a class="doclink" href="https://youtube.com/playlist?list=PL4VNqVoYtqlowo6pTIb1bccQasBKJuNzz" target="_blank" rel="noopener">SS 2025 playlist</a>
   </article>
 
-  <article>
+  <article id="pipeline">
     <h2>3D Production Pipeline</h2>
     <p class="kicker">From reference to engine ready asset</p>
     <dl class="meta">
