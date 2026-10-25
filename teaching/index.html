@@ -37,6 +37,7 @@
   .course-table th { text-align:left; padding:0.5rem 0.6rem; border-bottom:1px solid var(--ink);
     font-size:0.7rem; letter-spacing:0.13em; text-transform:uppercase; color:var(--muted); font-weight:normal; }
   .course-table td { padding:0.5rem 0.6rem; border-bottom:1px solid var(--rule); vertical-align:top; }
+  .course-table td span.term { font-size:0.85em; color:var(--muted); display:block; margin-top:0.2rem; }
   .doclink { font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; font-size:0.86rem;
     display:inline-block; margin-top:0.4rem; margin-right:1rem; color:var(--accent); text-decoration:none;
     border-bottom:1px solid var(--accent); padding-bottom:1px; }
@@ -49,8 +50,7 @@
     .course-table { font-size:0.88rem; }
   }
 
-
-    /* Dark Mode Overrides */
+  /* Dark Mode Overrides */
   [data-theme="dark"] {
     --ink: #e0e0e0;
     --muted: #a0a0a0;
@@ -100,8 +100,6 @@
     background: var(--accent);
     color: #121212;
   }
-
-
 </style>
 </head>
 <body>
@@ -116,36 +114,68 @@
     </p>
     <p class="pagenav"><a href="../">&larr; Design and user experience portfolio</a>
     <button id="theme-toggle" aria-label="Toggle dark mode">🌙 Dark Mode</button>
-
     </p>
   </header>
 
   <p class="lede">
     I have taught across Computer Science, Creative Technologies, Design, and Media, Art, and
-    Performance at the University of Regina, from introductory survey courses to upper level
+    Performance at the University of Regina, from introductory survey courses to upper-level
     production courses. My teaching emphasizes process over polish: students document iterations,
     test their assumptions against real users, and can articulate why a decision was made.
   </p>
 
   <section id="courses">
     <h2>Courses Taught</h2>
-    <p class="kicker">University of Regina &middot; 2023 to present</p>
+    <p class="kicker">University of Regina &middot; Complete Teaching Record</p>
     <table class="course-table">
       <thead>
-        <tr><th>Course</th><th>Role</th></tr>
+        <tr><th>Course &amp; Role</th><th>Details</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>MAP 102</strong> &middot; Exploring Cultural Regina</td><td>Instructor. Selected to develop and teach (Spring/Summer 2026); reappointed Winter 2027.</td></tr>
-        <tr><td><strong>MAP 101</strong> &middot; Introduction to Pop Culture</td><td>Instructor. Selected to develop and teach.</td></tr>
-        <tr><td><strong>CTCH / DES 312</strong> &middot; Introduction to Computer Game and VR Design</td><td>Instructor and course development: structure, assignments, evaluation criteria, rubrics.</td></tr>
-        <tr><td><strong>CTCH 223 / CS 207</strong> &middot; Building Interactive Gadgets</td><td>Lab instructor. Arduino, sensors, actuators, physical interaction.</td></tr>
-        <tr><td><strong>CS 473</strong></td><td>Sessional lecturer. Delivered fully online.</td></tr>
-        <tr><td><strong>CS 408</strong> &middot; Animation Software Design</td><td>Sessional lecturer. Delivered on campus and fully online.</td></tr>
-        <tr><td><strong>CS 476</strong></td><td>Sessional lecturer.</td></tr>
-        <tr><td><strong>CS 100</strong> &middot; Introduction to Computers</td><td>Sessional lecturer.</td></tr>
-        <tr><td><strong>CS 210</strong></td><td>Lab instructor.</td></tr>
-        <tr><td><strong>SPAN 100s and 200s</strong></td><td>Lab instructor. Spanish language acquisition.</td></tr>
-        <tr><td><strong>CS 205</strong>, <strong>CS 428 / 828</strong></td><td>Marker.</td></tr>
+        <tr>
+          <td><strong>MAP 102-010</strong> &middot; Exploring Cultural Regina<br><span class="term">Sessional Lecturer</span></td>
+          <td>Instructor. Selected to develop and teach an experiential course focused on cultural institutions across Regina. <br><em>Spring/Summer 2026</em></td>
+        </tr>
+        <tr>
+          <td><strong>MAP 101</strong> &middot; Introduction to Pop Culture<br><span class="term">Instructor</span></td>
+          <td>Selected to develop and teach.</td>
+        </tr>
+        <tr>
+          <td><strong>CTCH/DES 312-991</strong> &middot; Intro to Computer Game and VR Design<br><span class="term">Sessional Lecturer</span></td>
+          <td>Course development: structure, assignments, evaluation criteria, rubrics. <br><em>Five consecutive terms: Winter 2024 to Winter 2026</em></td>
+        </tr>
+        <tr>
+          <td><strong>CTCH 223 / CS 207</strong> &middot; Building Interactive Gadgets<br><span class="term">Lab Instructor</span></td>
+          <td>Taught physical computing, Arduino, sensors, and actuators. <br><em>Winter 2025, Fall 2025, Fall 2026</em></td>
+        </tr>
+        <tr>
+          <td><strong>CS 100-001</strong> &middot; Introduction to Computers<br><span class="term">Sessional Lecturer</span></td>
+          <td><em>Fall 2023</em></td>
+        </tr>
+        <tr>
+          <td><strong>CS 408-001</strong> &middot; Animation Software Design<br><span class="term">Sessional Lecturer</span></td>
+          <td>Delivered on campus and fully online. <br><em>Fall 2022</em></td>
+        </tr>
+        <tr>
+          <td><strong>CS 476-001</strong> &middot; Software Development Project<br><span class="term">Sessional Lecturer</span></td>
+          <td><em>Winter 2022, Spring/Summer 2022</em></td>
+        </tr>
+        <tr>
+          <td><strong>CS 215-001 / 070</strong> &middot; Web and Database Programming<br><span class="term">Sessional Lecturer</span></td>
+          <td><em>Fall 2016, Spring/Summer 2016, Winter 2017</em></td>
+        </tr>
+        <tr>
+          <td><strong>CS 210</strong> &middot; Data Structures and Abstractions<br><span class="term">Lab Instructor &amp; TA</span></td>
+          <td><em>Fall 2021, Winter 2022 (Lab Instructor) &middot; Fall 2021, Spring 2021, Winter 2020, Winter 2021 (TA)</em></td>
+        </tr>
+        <tr>
+          <td><strong>SPAN 100s and 200s</strong><br><span class="term">Lab Assistant</span></td>
+          <td>Spanish language acquisition. <br><em>Fall 2020 to Fall 2021</em></td>
+        </tr>
+        <tr>
+          <td><strong>CS 205, CS 428/828</strong><br><span class="term">Teaching Assistant</span></td>
+          <td><em>Fall 2020, Winter 2021</em></td>
+        </tr>
       </tbody>
     </table>
   </section>
@@ -157,12 +187,12 @@
       My courses are built around the principle that students learn a medium by making something
       that behaves, and by encountering the consequences of their decisions. In production courses
       this means short demonstrations followed by studio time, frequent small experiments rather
-      than a single high stakes assignment, and documentation of iterations including the ones
+      than a single high-stakes assignment, and documentation of iterations including the ones
       that failed.
     </p>
     <p>
       Where the subject allows, I ask students to test their assumptions against real users rather
-      than against their own intentions. In game and interaction design this is the difference
+      than against their own intentions. In game and interaction design, this is the difference
       between a project that runs and a project that communicates, and it is what I assess.
     </p>
     <p>
@@ -178,7 +208,7 @@
     <p class="kicker">Structured materials aligned to program requirements</p>
     <ul>
       <li>Developed <strong>MAP 102</strong> as an experiential course organized around site visits to cultural institutions across Regina, with coordination and ongoing relationships with cultural partners.</li>
-      <li>Contributed to the course structure, assignments, evaluation criteria, and rubrics for <strong>CTCH / DES 312</strong>.</li>
+      <li>Contributed to the course structure, assignments, evaluation criteria, and rubrics for <strong>CTCH/DES 312</strong>.</li>
       <li>Prepared syllabi aligned with program curriculum requirements for courses across Creative Technologies and Design, Media, Art, and Performance, and Computer Science.</li>
       <li>Designed weekly module structures with clear learning outcomes and alignment between objectives, activities, and assessment.</li>
       <li>Built assessment frameworks including project guidelines, rubrics, and process documentation requirements.</li>
@@ -189,7 +219,7 @@
     <h2>Online and Classroom Technology</h2>
     <p class="kicker">UR Courses (Moodle), Zoom, and lab hardware</p>
     <p>
-      I have delivered <strong>CS 473</strong> and <strong>CS 408</strong> fully online, and used
+      I have delivered <strong>CS 408</strong> fully online, and used
       <strong>UR Courses (Moodle)</strong> extensively across all courses for content delivery,
       readings, discussion forums, assignment submission, and grading. I use <strong>Zoom</strong>
       for synchronous sessions, office hours, and student consultation, and structure asynchronous
@@ -197,8 +227,8 @@
       cannot attend live can engage fully.
     </p>
     <p>
-      In lab based courses I manage classroom technologies directly, including hardware setup and
-      troubleshooting for Arduino based physical computing, and software configuration for Unity,
+      In lab-based courses I manage classroom technologies directly, including hardware setup and
+      troubleshooting for Arduino-based physical computing, and software configuration for Unity,
       Maya, and multimedia production tools.
     </p>
   </section>
@@ -207,7 +237,7 @@
     <h2>Student Work and Teaching Evidence</h2>
     <p class="kicker">Documented outcomes across multiple terms</p>
     <p>
-      Student projects from <strong>CTCH / DES 312</strong> across five terms, and laboratory
+      Student projects from <strong>CTCH/DES 312</strong> across five terms, and laboratory
       demonstrations from <strong>CTCH 223 / CS 207</strong>, are documented in the design portfolio.
     </p>
     <a class="doclink" href="../#games">Student game design projects</a>
@@ -220,9 +250,8 @@
     <p>
       The clearest measure of teaching effectiveness is reappointment by the same institution across
       different units. I have been selected twice for <strong>MAP 102</strong>, selected for
-      <strong>MAP 101</strong>, and reappointed across multiple terms and course levels in Computer
-      Science, from introductory <strong>CS 100</strong> to advanced <strong>CS 408</strong> and
-      <strong>CS 476</strong>.
+      <strong>MAP 101</strong>, and reappointed across five consecutive terms to teach <strong>CTCH/DES 312</strong>,
+      in addition to multiple terms and course levels in Computer Science.
     </p>
   </section>
 
@@ -237,7 +266,6 @@
   const toggleBtn = document.getElementById('theme-toggle');
   const currentTheme = localStorage.getItem('theme');
 
-  // Check for saved theme preference
   if (currentTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
     toggleBtn.textContent = '☀️ Light Mode';
