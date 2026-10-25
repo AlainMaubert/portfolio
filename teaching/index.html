@@ -48,6 +48,60 @@
     .wrap { padding-top:2.2rem; }
     .course-table { font-size:0.88rem; }
   }
+
+
+    /* Dark Mode Overrides */
+  [data-theme="dark"] {
+    --ink: #e0e0e0;
+    --muted: #a0a0a0;
+    --rule: #333333;
+    --accent: #66b2ff;
+  }
+
+  [data-theme="dark"] body {
+    background: #121212;
+    color: var(--ink);
+  }
+
+  [data-theme="dark"] header {
+    border-bottom-color: var(--ink);
+  }
+
+  [data-theme="dark"] .lede {
+    color: #d0d0d0;
+  }
+
+  [data-theme="dark"] .doclink:hover {
+    background: var(--accent);
+    color: #121212;
+    border-color: var(--accent);
+  }
+
+  /* Button Style */
+  #theme-toggle {
+    background: transparent;
+    border: 1px solid var(--rule);
+    color: var(--muted);
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 1rem;
+    transition: all 0.2s ease;
+  }
+
+  #theme-toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  [data-theme="dark"] #theme-toggle:hover {
+    background: var(--accent);
+    color: #121212;
+  }
+
+
 </style>
 </head>
 <body>
@@ -60,7 +114,10 @@
       <a href="mailto:mauberta@uregina.ca">mauberta@uregina.ca</a> &nbsp;&middot;&nbsp;
       PhD Candidate, Computer Science &nbsp;&middot;&nbsp; University of Regina
     </p>
-    <p class="pagenav"><a href="../">&larr; Design and user experience portfolio</a></p>
+    <p class="pagenav"><a href="../">&larr; Design and user experience portfolio</a>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+
+    </p>
   </header>
 
   <p class="lede">
@@ -175,5 +232,31 @@
   </footer>
 
 </div>
+
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme');
+
+  // Check for saved theme preference
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    toggleBtn.textContent = '☀️ Light Mode';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    let theme = document.documentElement.getAttribute('data-theme');
+
+    if (theme === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+      toggleBtn.textContent = '🌙 Dark Mode';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      toggleBtn.textContent = '☀️ Light Mode';
+    }
+  });
+</script>
+
 </body>
 </html>
